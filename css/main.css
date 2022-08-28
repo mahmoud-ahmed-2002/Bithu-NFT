@@ -1,0 +1,1252 @@
+html,
+body {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Inter", "Bakbak One";
+    line-height: 1.6;
+    font-weight: 500;
+    /* overflow-x: hidden;  Load Page */
+    background-color: #040C12;
+
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+:root {
+    --mainColor: #00FFA3;
+    --dangerColor: #f03a17;
+}
+
+header {
+    min-height: 920px;
+    background-image: url(../images/h1_banner_bg.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* header .navbar {
+    background-color: red;
+} */
+
+header .navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--mainColor);
+}
+
+/* header .navbar .navbar-collapse {
+    background-color: black;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+header .navbar .navbar-collapse .navbar-nav {
+    width: 300px;
+    height: 100vh;
+} */
+
+
+/* .....................  */
+header .navbar .navbar-nav .nav-item {
+    padding: 10px;
+
+}
+
+.nav-style {
+    background-color: rgba(27, 34, 38, 0.8) !important;
+    backdrop-filter: blur(15px) !important;
+}
+
+
+header .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:active,
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--mainColor);
+}
+
+/* header .navbar .navbar-collapse .join-btn,
+header .navbar .navbar-collapse .connect-btn {
+    font-family: 'Bakbak One';
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 50px;
+    width: 114px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+} */
+
+.main-btn-bithu,
+.btn-footer {
+    font-family: 'Bakbak One';
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 50px;
+    width: 114px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+header .navbar .navbar-collapse .connect-btn {
+    min-width: 150px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header .navbar .navbar-collapse .btn-nav .shape-1 img,
+section.home .box .btn-mint .shape-1 img,
+section.home .box .btn-whitelist .shape-1 img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+header .navbar .navbar-collapse .btn-nav .shape-2 img,
+section.home .box .btn-mint .shape-2 img,
+section.home .box .btn-whitelist .shape-2 img {
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    transform: rotate(90deg);
+}
+
+header .navbar .navbar-collapse .btn-nav .hover-shape,
+section.home .box .btn-mint .hover-shape {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.4s;
+}
+
+header .navbar .navbar-collapse .btn-nav:hover .hover-shape,
+section.home .box .btn-mint:hover .hover-shape,
+section.home .box .btn-whitelist:hover .hover-shape,
+section.community .btn-footer:hover .hover-shape {
+    left: 0;
+}
+
+header .navbar .navbar-collapse .btn-nav:hover .shape-2 img,
+section.home .box .btn-mint:hover .shape-2 img,
+section.home .box .btn-whitelist:hover .shape-2 img {
+    right: 5px;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+
+header .navbar .navbar-collapse .connect-btn .hover-shape {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+section.home {
+    padding-top: 70px;
+}
+
+section.home .box {
+    margin-top: 66px;
+    max-width: 500px;
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.home .box h2 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+
+
+section.home .box .btn-container .btn-mint,
+section.home .box .btn-container .btn-whitelist {
+    height: 60px;
+    width: 200px;
+    color: #fff;
+}
+
+section.home .box .btn-container .btn-mint {
+    background-color: var(--mainColor);
+    border: none;
+    color: #111111;
+}
+
+section.home .box .btn-mint .shape-1 img,
+section.home .box .btn-whitelist .shape-1 img,
+section.home .box .btn-mint .shape-2 img,
+section.home .box .btn-whitelist .shape-2 img {
+    width: 25px;
+    z-index: 4;
+}
+
+section.home .box .btn-mint .shape-2 img,
+section.home .box .btn-whitelist .shape-2 img {
+    right: -25px;
+}
+
+section.home .box .btn-mint .mint {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+
+section.home .box .btn-mint:hover .mint {
+    color: #fff;
+}
+
+section.home .box .btn-mint .hover-shape {
+    z-index: 1;
+    background-color: var(--dangerColor);
+}
+
+section.home .box ul li {
+    font-family: 'Bakbak One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section.home .box ul li span {
+    color: #FFE600;
+}
+
+section.home .image-section .box .img-sec {
+    position: relative;
+}
+
+section.home .image-section .box .img-sec .mint-live .sec-yellow .arrow {
+    position: absolute;
+}
+
+section.home .image-section .box .img-sec .mint-live .sec-yellow {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -65px;
+    left: -65px;
+}
+
+
+
+section.home .image-section .box .bithu-avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.home .image-section .box .img-sec .mint-live .sec-yellow .rotate-img {
+    animation: spinning 20s infinite linear;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+
+}
+
+
+.counter-section {
+    background-color: rgba(13, 27, 38, 0.7);
+    min-height: 200px;
+    position: relative;
+    font-family: 'Bakbak One';
+    text-align: center;
+
+}
+
+.counter-section h3 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+
+.counter-section h4 {
+    font-size: 18px;
+}
+
+.counter-section .box {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media query Edit  */
+/* @media query Edit  */
+/* @media query Edit  */
+/* @media query Edit  */
+.counter-section .square_shape {
+    position: absolute;
+}
+
+.counter-section .one {
+    top: 0;
+    left: 0;
+}
+
+.counter-section .two {
+    bottom: 0;
+    left: 0;
+}
+
+.counter-section .three {
+    top: 0;
+    right: 0;
+}
+
+.counter-section .four {
+    bottom: 0;
+    right: 0;
+}
+
+section.carousel {
+    padding: 28px;
+
+}
+
+section.carousel .item {
+    background: rgba(255, 255, 255, 0.05);
+    width: 200px;
+    height: 280px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.carousel .item img {
+    width: 115px;
+}
+
+
+section.steps {
+    margin-top: 113px;
+    padding-bottom: 85px;
+    position: relative;
+
+}
+
+section.steps .bithu-steps-section {
+    position: relative;
+    z-index: 7;
+}
+
+section.steps .steps-shadow {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    max-width: 685px;
+    width: 100%;
+    height: 545px;
+}
+
+section.steps .bithu-steps-section h2 img,
+section.our-goals .title-our h2 img {
+    margin-left: 5px;
+    margin-top: -3px;
+}
+
+section.steps .bithu-steps-section h2,
+section.steps .bithu-steps-section h3,
+section.about-us .bithu-about-section h2,
+section.about-us .bithu-about-section h3,
+section.our-goals .title-our h3,
+section.our-goals .title-our h2,
+section.team-members .title-members h2,
+section.team-members .title-members h3 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #00FFA3;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section.steps .bithu-steps-section h3,
+section.about-us .bithu-about-section h3,
+section.our-goals .title-our h3,
+section.team-members .title-members h3 {
+    font-size: 40px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+section.steps .box-step h4 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 140px;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+section.steps .box-step h4.green {
+    -webkit-text-stroke: 1px rgba(0, 255, 163, 0.7);
+}
+
+section.steps .box-step h4.blue {
+    -webkit-text-stroke: 1px rgba(88, 101, 242, 0.7);
+}
+
+section.steps .box-step h4.yellow {
+    -webkit-text-stroke: 1px rgba(255, 230, 0, 0.7);
+}
+
+section.steps .box-step h4.red {
+    -webkit-text-stroke: 1px rgba(255, 0, 76, 0.7);
+}
+
+section.steps .box-step p {
+    margin: 40px 0px 0px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 148px;
+    width: 100%;
+
+}
+
+
+section.about-us {
+    padding-top: 110px;
+    /* padding-bottom: 80px; */
+    background-image: url(../images/h1_about_us_bg.png);
+    /* background-size: cover; */
+    /* height: 600px; */
+    background-position: left left;
+}
+
+section.about-us .about-us-img {
+    position: relative;
+}
+
+section.about-us .about-us-img .img-card-one .about-us-img-1,
+section.about-us .about-us-img .img-card-two .about-us-img-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section.about-us .about-us-img .img-card-two .about-us-img-2 {
+    height: 190px;
+}
+
+section.about-us .about-us-img .img-card-one,
+section.about-us .about-us-img .img-card-two {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    /* cursor: pointer;
+    transition: 0.3s; */
+}
+
+section.about-us .about-us-img .img-card-one {
+    transform: rotate(-15deg);
+    top: 50px;
+    left: 30px;
+    padding: 24px;
+    height: 328px;
+    width: 270px;
+    z-index: 100;
+}
+
+section.about-us .about-us-img .img-card-two {
+    padding: 20px;
+    top: 150px;
+    right: 20px;
+    transform: rotate(15deg);
+    height: 279px;
+    width: 230px;
+    z-index: 99;
+}
+
+/* section.about-us .about-us-img .img-card-one:hover .shapes .shapes-left .shape_1,
+section.about-us .about-us-img .img-card-one:hover .shapes .shapes-left .shape_2,
+section.about-us .about-us-img .img-card-one:hover .shapes .shapes-right .shape_3 {
+    background-color: #00FFA3;
+}
+
+section.about-us .about-us-img .img-card-one:hover {
+    transform: rotate(0);
+} */
+
+section.about-us .about-us-img .img-card-one .shapes .shapes-left,
+section.about-us .about-us-img .img-card-two .shapes .shapes-left {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+}
+
+
+section.about-us .about-us-img .img-card-one .shapes .shapes-left .shape_1,
+section.about-us .about-us-img .img-card-two .shapes .shapes-left .shape_1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 115px;
+    height: 15px;
+}
+
+section.about-us .about-us-img .img-card-two .shapes .shapes-left .shape_1 {
+    margin-top: 10px;
+    height: 13px;
+    width: 98px;
+}
+
+
+
+section.about-us .about-us-img .img-card-one .shapes .shapes-left .shape_2,
+section.about-us .about-us-img .img-card-two .shapes .shapes-left .shape_2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    width: 75px;
+    height: 8px;
+}
+
+section.about-us .about-us-img .img-card-two .shapes .shapes-left .shape_2 {
+    height: 7px;
+    width: 64px;
+}
+
+section.about-us .about-us-img .img-card-one .shapes .shapes-right,
+section.about-us .about-us-img .img-card-two .shapes .shapes-right {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+}
+
+section.about-us .about-us-img .img-card-two .shapes .shapes-right {
+    bottom: 20px;
+}
+
+section.about-us .about-us-img .img-card-one .shapes .shapes-right .shape_3,
+section.about-us .about-us-img .img-card-two .shapes .shapes-right .shape_3 {
+    background: rgba(255, 255, 255, 0.1);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+section.about-us .about-us-img .img-card-two .shapes .shapes-right .shape_3 {
+    height: 25px;
+    width: 25px;
+}
+
+
+section.about-us .boxo-text .right-text {
+    padding-top: 40px;
+}
+
+section.about-us .boxo-text .right-text p {
+    color: rgba(255, 255, 255, 0.8);
+    /* font-family: "Inter", "Bakbak One"; */
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+}
+
+section.about-us .cards .text-card {
+    background: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    height: 220px;
+    padding: 35px;
+    margin-top: 20px;
+}
+
+section.about-us .cards .text-card h3 {
+    padding-bottom: 10px;
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+section.about-us .cards .text-card p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 289px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section.our-goals {
+    padding-top: 110px;
+    position: relative;
+    padding-bottom: 85px;
+}
+
+
+section.our-goals .title-our h3,
+section.team-members .title-members h3 {
+    font-size: 48px;
+}
+
+section.our-goals .owl-carousel .box-phase h3 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #00FFA3;
+    position: relative;
+}
+
+section.our-goals .owl-carousel .box-phase h3 img {
+    position: absolute;
+    left: 90px;
+    top: 7px;
+    width: 15px;
+}
+
+section.our-goals .owl-carousel .box-phase h4 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+section.our-goals .owl-carousel .box-phase p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 240px;
+}
+
+.mass-gard {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: 0;
+}
+
+
+section.team-members {
+
+    background: rgba(25, 35, 40, 0.5);
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 1;
+
+
+
+}
+
+section.team-members .over-lay {
+    background-image: url(../images/v1_team_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* height: 1000px; */
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 85px;
+
+}
+
+section.team-members .over-lay .row .box-member {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* z-index: 78; */
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+section.team-members .over-lay .row .box-member h3 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-bottom: 4px;
+
+}
+
+section.team-members .over-lay .row .box-member h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+section.team-members .over-lay .row .box-member:hover .over-lays {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+section.team-members .over-lay .row .box-member .over-lays {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* z-index: 77; */
+    opacity: 0;
+}
+
+section.team-members .over-lay .row .box-member .over-lays .social {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+
+}
+
+section.team-members .over-lay .row .box-member .over-lays .social ul {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 195px;
+    width: 100%;
+}
+
+section.team-members .over-lay .row .box-member .over-lays .social ul li {
+    height: 35px;
+    width: 35px;
+    background: #0F181D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+
+}
+
+section.team-members .over-lay .row .box-member .over-lays .shapes {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+section.team-members .over-lay .row .box-member .over-lays .spans {
+    position: relative;
+
+}
+
+section.team-members .over-lay .row .box-member .over-lays .spans .hov_shape1 {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transform: rotate(90deg);
+}
+
+section.team-members .over-lay .row .box-member .over-lays .spans .hov_shape2 {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+
+}
+
+section.question {
+    padding-top: 110px;
+    /* padding-bottom: 85px; */
+    /* position: relative; */
+}
+
+section.question .title-section h2 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #00FFA3;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section.question .title-section h3 {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+section.question .acco-section .faq-questions .accordion {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgba(255, 255, 255, 0.8);
+    width: 55%;
+    margin: 10px auto 0 auto;
+
+}
+
+section.question .acco-section {
+    position: relative;
+
+
+}
+
+section.question .acco-section .faq-questions .accordion:hover {
+    color: #fff;
+}
+
+section.question .acco-section .faq-questions .accordion-panel {
+    padding: 0px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    width: 55%;
+    margin: auto;
+
+}
+
+section.question .acco-section .faq-questions .accordion-panel p {
+    padding: 0px 48px 24px 29px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0px;
+    max-width: 100%;
+}
+
+section.question .accordion svg {
+    position: relative;
+
+}
+
+/* section.question .faq_bg_wattermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.question .faq_bg_wattermark img {
+    width: 350px;
+} */
+
+
+section.community {
+    padding-top: 110px;
+    /* padding-bottom: 85px; */
+    background-image: url(../images/v1_footer_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 890px;
+    position: relative;
+
+}
+
+section.community .community-text h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Bakbak One';
+}
+
+section.community .btn-footer {
+    height: 60px;
+    width: 200px;
+    border: 0;
+    z-index: 2;
+}
+
+section.community .btn-whitelist {
+    background-color: #00FFA3;
+    color: #040C12;
+
+
+}
+
+
+section.community .btn-discord {
+    background-color: #5865F2;
+}
+
+section.community .btn-footer .shape-1 img,
+section.community .btn-footer .shape-2 img {
+    width: 25px;
+}
+
+section.community .btn-footer .shape-1,
+section.community .btn-footer .shape-2 {
+    position: absolute;
+
+}
+
+section.community .btn-footer .shape-1 {
+    top: 5px;
+    left: 5px;
+}
+
+section.community .btn-footer .shape-2 {
+    right: -25px;
+    top: 5px;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+section.community .btn-footer:hover .shape-2 {
+    right: 5px;
+
+}
+
+section.community .btn-whitelist .hover-shape {
+    z-index: 1;
+}
+
+section.community .btn-whitelist .shape-2 img {
+    z-index: 4;
+}
+
+section.community .btn-footer .hover-shape-dark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+section.community .btn-footer:hover .hover-shape-dark {
+    opacity: 1;
+}
+
+section.community .footer-social .social-hov-shape {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+section.community .footer-social .social-hov-shape a {
+    color: #fff;
+    font-size: 25px;
+}
+
+section.community .footer-social .social-hov-shape a img {
+    margin-top: -5px;
+}
+
+section.community .footer-social .social-hov-shape .hov-shape {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    transition: 0.3s;
+}
+
+section.community .footer-social .social-hov-shape:hover .hov-shape {
+    left: 5px;
+}
+
+section.community .last-footer {
+    position: relative;
+}
+
+section.community .last-footer .character-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.community .last-footer .footer-overlay {
+    background: linear-gradient(180deg, rgba(4, 15, 21, 0) 0%, rgba(4, 14, 20, 0.270833) 50.52%, #040C12 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+section.community .last-footer .footer-bottom {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    min-height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+section.community .last-footer .footer-bottom .footer-menu {
+    min-height: 100px;
+}
+
+section.community .last-footer .footer-bottom .content {
+    position: relative;
+}
+
+section.community .last-footer .footer-bottom .content .shape-left {
+    position: absolute;
+    left: 0;
+}
+
+section.community .last-footer .footer-bottom .content .shape-right {
+    position: absolute;
+    right: 0;
+}
+
+section.community .last-footer .footer-menu .footer-bottom-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+section.community .last-footer .footer-menu .footer-bottom-right {
+    width: 400px;
+}
+
+section.community .last-footer .footer-menu .footer-bottom-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+section.community .last-footer .footer-menu .footer-bottom-right ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+section.community .last-footer .footer-menu .footer-bottom-right ul li a:hover {
+
+    color: var(--mainColor);
+}
+
+section.community .footer-stras-sect {
+    height: 356px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+section.community .footer-stras-sect .footer-stars {
+    position: relative;
+    height: 100%;
+}
+
+section.community .footer-stras-sect .footer-stars span {
+    position: absolute;
+}
+
+section.community .footer-stras-sect .footer-stars .star_1 {
+    /* position: absolute; */
+    top: 5%;
+    right: 10%;
+    animation: star1 5s infinite linear;
+}
+
+section.community .footer-stras-sect .footer-stars .star_2 {
+    /* position: absolute; */
+    top: 20%;
+    left: 10%;
+    animation: star2 5s infinite linear;
+}
+
+section.community .footer-stras-sect .footer-stars .star_3 {
+    /* position: absolute; */
+    top: 44%;
+    left: 25%;
+    animation: star3 5s infinite;
+}
+
+section.community .footer-stras-sect .footer-stars .star_4 {
+    /* position: absolute; */
+    top: 30%;
+    left: 44%;
+    animation: star4 5s infinite;
+}
+
+section.community .footer-stras-sect .footer-stars .star_5 {
+    /* position: absolute; */
+    bottom: 22%;
+    right: 30%;
+    animation: star5 5s infinite;
+}
+
+section.community .footer-stras-sect .footer-stars .star_6 {
+    /* position: absolute; */
+    bottom: 15%;
+    right: 10%;
+    animation: star6 5s infinite;
+}
+
+section.community .footer-stras-sect .footer-stars .star_7 {
+    /* position: absolute; */
+    bottom: -10%;
+    left: 20%;
+    animation: star7 5s infinite;
+}
+
+
+
+
+@keyframes star1 {
+
+    0%,
+    100% {
+        top: 25px;
+    }
+
+    50% {
+        top: 0px;
+    }
+}
+
+
+@keyframes star2 {
+
+    0%,
+    100% {
+        top: 25%;
+    }
+
+    50% {
+        top: 20%;
+    }
+}
+
+@keyframes star4 {
+
+    0%,
+    100% {
+        top: 34%;
+    }
+
+    50% {
+        top: 30%;
+    }
+}
+
+@keyframes star6 {
+
+    0%,
+    100% {
+        bottom: 10%;
+    }
+
+    50% {
+        bottom: 15%;
+    }
+}
+
+@keyframes star7 {
+
+    0%,
+    100% {
+        bottom: -2%;
+    }
+
+    50% {
+        bottom: 2%;
+    }
+}
